@@ -11,11 +11,10 @@ logger = logging.getLogger(__name__)
 
 
 def show_menu() -> None:
-    """Відображає меню вибору завдання."""
-    print("\nОберіть завдання для запуску:")
-    print("1. Task 1 - Патерн фабрика")
-    print("2. Task 2 - SOLID")
-    print("0. Вихід")
+    logger.info("Оберіть завдання для запуску:")
+    logger.info("1. Task 1 - Патерн фабрика")
+    logger.info("2. Task 2 - SOLID")
+    logger.info("0. Вихід")
 
 
 def run_task(choice: str) -> bool:
